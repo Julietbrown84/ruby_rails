@@ -1,0 +1,13 @@
+<h1>Welcome Crazy Animals</h1>
+
+
+<ul>
+  <% @animals.each do |animal| %>
+    <li>
+      <h2><%= animal.name %></h2>
+      <img src='<%=animal.image_url%>' />
+
+      <% link_to('show this animal', animal_path(animal)) %>
+    </li>
+  <% end %>
+</ul>
