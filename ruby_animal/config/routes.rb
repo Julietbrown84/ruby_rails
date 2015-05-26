@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   root to: 'animals#index'
   get '/animals/:id' => 'animals#show'
   get '/animals/new' => 'animals#new'
+  get '/animals/:id/edit' => 'animals#edit'
 end

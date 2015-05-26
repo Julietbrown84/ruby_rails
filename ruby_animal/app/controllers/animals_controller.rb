@@ -21,6 +21,11 @@ class AnimalsController < ApplicationController
    end
 end
 
+
+  def edit
+    @animal = Animal.find(params[:id])
+  end
+
 private
 
    def animal_params
