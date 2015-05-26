@@ -1,12 +1,22 @@
 <h1>Welcome Crazy Animals</h1>
 
 
-<ul>
+
+<nav>
+  <a class="link" href="/animals/new">Make your own animal</a> /
+  <a class="link" href="/animals">Are these animals?</a>
+</nav>
+
+</a>
+<ul id='animals'>
   <% @animals.each do |animal| %>
     <li>
-      <h2><%= animal.name %></h2>
-      <img src='<%=animal.image_url%>' />
 
+     <h3><span class='life-count'>1</span> <span> | Hi my name is </span>
+      <h2><%= animal.name %></h2>
+   <a href= "/animals/:id">
+      <img src='<%=animal.image_url%>' />
+   </a>
       <% link_to('show this animal', animal_path(animal)) %>
     </li>
   <% end %>
