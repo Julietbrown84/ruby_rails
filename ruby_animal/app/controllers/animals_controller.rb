@@ -6,6 +6,7 @@ class AnimalsController < ApplicationController
 
   def show
     @animal = Animal.find(params[:id])
+    @animal.lose_a_life!
   end
 
    def new
@@ -25,6 +26,16 @@ end
   def edit
     @animal = Animal.find(params[:id])
   end
+
+  def update
+    @animal = Animal.find(params[:id])
+    if @animal.update(animal_params)
+      redirect_to @animal
+    else
+      render 'edit', status: 400
+    end
+  end
+
 
 private
 

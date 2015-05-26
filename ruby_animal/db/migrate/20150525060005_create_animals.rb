@@ -4,6 +4,7 @@ class CreateAnimals < ActiveRecord::Migration
       t.string :name
       t.text :life_story
       t.string :image_url
+      t.integer :lives, default: 11
 
       t.timestamps null: false
     end
