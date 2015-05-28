@@ -21,6 +21,6 @@ Rails.application.routes.draw do
     get '/animals/new' => 'animals#new'
     get '/animals/:id/edit' => 'animals#edit'
 
-    get 'welcome/index'
+    get '/welcomes' => 'welcomes#index'
 
 end
