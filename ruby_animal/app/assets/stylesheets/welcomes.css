@@ -1,0 +1,63 @@
+body {
+   /* background-color: #b0c4de;*/
+    height: 100%;
+     position: relative;
+    background-image: url('http://julietbrowncreative.weebly.com/uploads/3/1/6/3/31635653/8021899_orig.jpg');
+  }
+
+
+
+h1 {
+  font-size: 40px;
+  font-color: white;
+}
+h2 {
+  font-size: 60px;
+  font-color: white;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 20px;
+  font-color: white;
+}
+ul#welcomes li {
+  border: 2px solid white;
+  padding: 40px;
+  width: 500px;
+  height: 1000px;
+  margin: auto;
+}
+
+
+#menu {
+    width: 850px;
+    height: 55px;
+    font-size: 15px;
+
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    margin-left: 500px;
+    margin-top: 450px;
+}
+
+
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+
+#menu li {
+display: inline;
+padding: 20px;
+}
+
+#menu a:hover {
+    color: #F90;
+    background-color: #FFF;
+}
+
