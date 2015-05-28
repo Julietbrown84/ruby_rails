@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+#arts { background-image: url('http://julietbrowncreative.weebly.com/uploads/3/1/6/3/31635653/8021899_orig.jpg'); }
 
 html, body {
   height: 100%;
