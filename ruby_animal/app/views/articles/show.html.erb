@@ -20,12 +20,9 @@
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
-
+<%= link_to 'Edit', edit_article_path(@article) %>/
+<%= link_to 'Back to article', articles_path %>/
 
 <a class="link" href="/animals/new">Art Cart</a> /
-<%= link_to 'Back', animals_path %>/
-...
-<%= link_to 'Edit', edit_article_path(@article) %>
+<%= link_to 'Back to home', animals_path %>/
 <table>

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     resources :comments
    end
     resources :animals, except: :destroy
+    resources :welcome
 
 
     # resources :animals, only: [:index, :show]
