@@ -40,28 +40,32 @@ h4 {
   margin: 20px;
 }
 
-/* line 33, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
 img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
 }
 
-/* line 38, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
 ul {
   list-style: none;
   padding: 0;
 }
 
-/* line 43, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
 ul#animals li {
   border: 2px solid black;
   padding: 10px;
   width: 500px;
-  margin: 20px auto;
+  height: 300px;
+  margin: 50px auto;
+}
+ul#articles li {
+  border: 0.5px solid black;
+  padding: 10px;
+  width: 500px;
+  height: 50px;
+  margin: 50px auto;
 }
 
-/* line 50, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
 p {
   width: 500px;
   font-size: 16px;
@@ -69,7 +73,6 @@ p {
   word-wrap: break-word;
 }
 
-/* line 56, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
 input {
   border: 1px solid black;
   width: 300px;
@@ -77,42 +80,36 @@ input {
   padding: 4px;
 }
 
-/* line 62, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
 input[type="submit"] {
   background: transparent;
   transition: 0.5s;
 }
-/* line 65, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
+
 input[type="submit"]:hover {
   border-color: transparent;
 }
 
-/* line 69, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
 textarea {
   width: 300px;
   height: 200px;
   text-align: center;
 }
 
-/* line 74, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
 a.link {
   text-decoration: none;
   border-bottom: 1px solid black;
   color: black;
   transition: 0.5s;
 }
-/* line 79, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
 a.link:hover {
   border-color: transparent;
 }
 
-/* line 83, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
 #error_explanation {
   font-size: 12px;
   color: red;
 }
 
-/* line 87, /Users/eugenelynch/code/fuckafucka/meowtown/app/assets/stylesheets/cats.scss */
 span.life-count {
   font-size: 14px;
   background: black;

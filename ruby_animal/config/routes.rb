@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   # resources :animals, only: [:index, :show]
   # resources :animals, only: [:index, :show]
+  delete '/articles/:id' => 'articles#destroy'
   get 'articles' => 'article#index'
   get '/articles/:id' => 'articles#show'
   get  '/articles/new' => 'articles#new'
