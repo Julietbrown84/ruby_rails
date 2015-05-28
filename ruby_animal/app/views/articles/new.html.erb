@@ -1,4 +1,5 @@
 <h1>New Article</h1>
+<%= link_to 'Back', animals_path %>
 <%= form_for :article, url: articles_path do |f| %>
   <p>
     <%= f.label :title %><br>
@@ -14,3 +15,8 @@
     <%= f.submit %>
   </p>
 <% end %>
+<%= form_for :article, url: articles_path do |f| %>
+  ...
+<% end %>
+
+
