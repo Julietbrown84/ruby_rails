@@ -1,11 +1,11 @@
 <h1> A</h1>
 <nav>
-  <a class="link" href="/animals/new">Art Cart</a> /
-   <%= link_to 'My Blog', controller: 'articles' %>/
-  <a class="link" href="/articles/new">Write a blog</a>/
-  <a class="link" href="/animals/new">be creative,What can you make?</a> /
-  <a class="link" href="/animals">Are these animals?</a>
-   <li><a class="link" href="/welcome">Home</a></li>
+  <a class="link" href="/animals/new">New Creatures</a> /
+   <%= link_to 'Blog', controller: 'articles' %>/
+  <a class="link" href="/articles/new">Add Blog</a>/
+  <a class="link" href="/animals/new">Make a Creature</a> /
+  <a class="link" href="/animals">Cool Creatures</a>
+   <li><a class="link" href="/welcomes">Home</a></li>
 
 </nav>
 </a>
@@ -13,7 +13,7 @@
   <% @animals.each do |animal| %>
     <li>
 
-     <h3><span class='life-count'>1</span> <span> | Hi my name is </span>
+     <h3></span> <span> | Hi my name is </span>
       <h2><%= animal.name %></h2>
    <a href= "/animals/:id">
       <img src='<%=animal.image_url%>' />

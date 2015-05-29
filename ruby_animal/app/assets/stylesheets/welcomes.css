@@ -2,6 +2,7 @@ body {
    /* background-color: #b0c4de;*/
     height: 100%;
      position: relative;
+     opacity: 0.9;
     background-image: url('http://julietbrowncreative.weebly.com/uploads/3/1/6/3/31635653/8021899_orig.jpg');
   }
 
@@ -78,7 +79,20 @@ body {margin: 30px auto; text-align: right;}
     margin-top: -150px;
 }
 
-
+/*h2 {
+  width: 100px;
+  height: 50px;
+  margin-top: 720px;
+}*/
+.footer {
+    padding: 1.2em 0;
+    background: #000;
+    font-family: "Fjalla One", Verdana, Geneva, sans-serif;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    text-align:center;
+    /* you probably need to add some extra styles here */
+}
 #menu ul {
     height: auto;
     padding: 8px 0px;
