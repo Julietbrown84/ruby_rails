@@ -21,6 +21,7 @@ Rails.application.routes.draw do
     get '/animals/new' => 'animals#new'
     get '/animals/:id/edit' => 'animals#edit'
 
+    get '/welcomes/show' => 'welcomes#index'
     get '/welcomes' => 'welcomes#index'
 
 end

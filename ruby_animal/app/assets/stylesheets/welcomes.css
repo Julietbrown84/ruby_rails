@@ -6,7 +6,6 @@ body {
   }
 
 
-
 h1 {
   font-size: 40px;
   font-color: white;
@@ -25,7 +24,7 @@ ul#welcomes li {
   border: 2px solid white;
   padding: 40px;
   width: 500px;
-  height: 1000px;
+  height: 1500px;
   margin: auto;
 }
 
@@ -35,12 +34,12 @@ ul#welcomes li {
     height: 55px;
     font-size: 15px;
 
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: "GT-Walsheim-Bold";
     text-align: center;
     background-repeat: no-repeat;
     border-radius: 100px;
     margin-left: 500px;
-    margin-top: 450px;
+    margin-top: 500px;
 }
 
 
@@ -60,4 +59,29 @@ padding: 20px;
     color: #F90;
     background-color: #FFF;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
