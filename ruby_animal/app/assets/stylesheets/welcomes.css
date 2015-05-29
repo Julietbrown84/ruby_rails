@@ -5,9 +5,20 @@ body {
     background-image: url('http://julietbrowncreative.weebly.com/uploads/3/1/6/3/31635653/8021899_orig.jpg');
   }
 
+#panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
 
 h1 {
-  font-size: 40px;
+  font-size: 20px;
   font-color: white;
 }
 h2 {
