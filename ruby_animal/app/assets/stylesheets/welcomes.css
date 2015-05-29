@@ -21,6 +21,7 @@ h1 {
   font-size: 20px;
   font-color: white;
 }
+
 h2 {
   font-size: 60px;
   font-color: white;
@@ -31,26 +32,50 @@ h2 {
   margin: 20px;
   font-color: white;
 }
+
 ul#welcomes li {
   border: 2px solid white;
   padding: 40px;
-  width: 500px;
+  width: 700px;
   height: 1500px;
   margin: auto;
 }
 
+.text-box{
+  border: 2px solid white;
+  padding: 40px;
+  width: 100px;
+  height: 50px;
+  margin-top: 720px;
+}
+
+/*.menu {
+    width: 850px;
+    height: 55px;
+    font-size: 15px;
+    font-family: "GT-Walsheim-Bold";
+    text-align: center;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+
+}*/
+
+.box {
+    margin-top: -150px;
+    margin-left: 1300px;
+}
+body {margin: 30px auto; text-align: right;}
 
 #menu {
     width: 850px;
     height: 55px;
     font-size: 15px;
-
     font-family: "GT-Walsheim-Bold";
     text-align: center;
     background-repeat: no-repeat;
     border-radius: 100px;
     margin-left: 500px;
-    margin-top: 500px;
+    margin-top: -150px;
 }
 
 
