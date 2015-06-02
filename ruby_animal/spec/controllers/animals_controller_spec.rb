@@ -95,3 +95,49 @@ RSpec.describe AnimalsController, type: :controller do
        end
 
      end
+
+  describe "#update" do
+
+     context "with valid params" do
+
+       before do
+         @animal = create(:animal)
+         @animal_params = attributes_for(:animal) # new info for the
+         patch :update, { id: @animal.id, animal: @animal_params }
+       end
+
+       it { should respond_with(302) }
+       it { should redirect_to("/animals/#{@animal.id}")}
+       it "should update the attributes for cat" do
+         expect(Animal.find_by(@animal_params)).to be_truthy
+       end
+
+     end
+
+         context "with invalid params" do
+
+           before do
+             @cat = create(:cat)
+             @invalid_cat_params = { name: "", life_story: "", image_url: "" }
+             patch :update, { id: @cat.id, cat: @invalid_cat_params }
+           end
+
+           it { should respond_with(400) }
+           it { should render_template(:edit) }
+           it "should not update the attributes for cat" do
+             expect(Cat.find_by(@invalid_cat_params)).to be_nil
+           end
+
+         end
+
+       end
+end
+
+
+
+
+
+
+
+
+
