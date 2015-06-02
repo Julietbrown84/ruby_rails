@@ -1,31 +1,35 @@
 require 'rails_helper'
 
-RSpec.describe Animal, type: :controller do
+RSpec.describe AnimalsController, type: :controller do
 
-    describe "validations" do
-        it { should validate_presence_of(:name) }
-        it { should validate_presence_of(:life_story) }
-        it { should validate_presence_of(:image_url) }
-    end
+    describe "#index" do
 
-    describe "methods" do
-        describe "#lose_a_life!" do
-            context "if cat has more than 1 life remaining" do
-                it "decrements the cat's lives by 1" do
-                    healthy_cat.lose_a_life!
-                    expect(healthy_cat.lives).to eq(8)
-                end
-            end
-            context "if cat has 1 life remaining" do
-                it "removes the cat from the database" do
-                    almost_dead_cat.lose_a_life!
-                    expect(Cat.find_by_name(almost_dead_cat.name)).to be_nil
-                end
-            end
+        before do
+            5.times { Animal.create(attributes_for(:animal)) }
+            get :index
         end
+
+        it { should respond_with(200) }
+        it { should render_template(:index) }
+        it "should assign @animals to all Animals in DB" do
+            expect(assigns(:animals)).to eq(Animal.all)
+        end
+
     end
 
-end
+        describe "#show" do
 
+        before do
+            @animal = Animal.create(attributes_for(:cat))
+            get :show, id: @animal.id
+        end
+
+        it { should respond_with(200) }
+        it { should render_template(:show) }
+        it "should assign cat with specified id to @animal" do
+            expect(assigns(:animal)).to eq(@animal)
+        end
+
+    end
 
 end
